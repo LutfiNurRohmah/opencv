@@ -18,7 +18,7 @@ while True:
         # print(area)
         if(area > 1000):
             # cv2.drawContours(frame, contour, -1, (255, 0, 0), 2)
-            (x, y), radius = cv2.minEnclosingCircle(contours[idx])
+            (x, y), radius = cv2.minEnclosingCircle(contours[idx]) #titik tengah
             cv2.circle(frame, (int(x), int(y)), 10, (0, 0, 255), 2)
 
     cv2.imshow("Frame", frame)

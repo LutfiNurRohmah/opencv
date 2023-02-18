@@ -20,7 +20,7 @@ while True:
             sudut = len(cv2.approxPolyDP(contour, 0.02*cv2.arcLength(contour, True), True))  #nyari banyak sudut
             print(sudut)
             cv2.putText(frame, str(sudut), (200, 200), cv2.FONT_HERSHEY_COMPLEX, 1, (0, 0, 255), 1)
-            time.sleep(1)
+            # time.sleep(1)
 
     cv2.imshow("Frame", frame)
     cv2.imshow("hsv", mask)
